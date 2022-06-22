@@ -29,11 +29,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_riverpod: ^2.0.0-dev.5
+  get: ^4.6.5
   http: ^0.13.4
+  intl: ^0.17.0
   countup: ^0.1.4
   animated_text_kit: ^4.2.2
   percent_indicator: ^4.2.2
+  hive: ^2.2.2
+  shared_preferences: 2.0.6
+  path_provider: ^2.0.11
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -64,7 +68,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/images/bg.jpg
+     - assets/images/strike.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:simpleflutter/homepage/homepage.dart';
+import 'package:get/get.dart';
+import 'package:hive/hive.dart';
+import 'package:simpleflutter/screens/homepage/homepage.dart';
 
-void main() {
-  runApp(const ProviderScope(child: MyApp()));
+Future<void> main() async {
+  runApp(const GetMaterialApp(home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -13,12 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter3 Boilerplate By Neil',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         fontFamily: 'OpenSans',
       ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
